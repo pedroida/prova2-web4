@@ -1,5 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -39,9 +39,8 @@
 <div class="error-area ptb--100 text-center">
     <div class="container">
         <div class="error-content">
-            <h2>500</h2>
-            <p>Ooops! Tivemos um problema interno</p>
-            <p>${errorBean.message}</p>
+            <p>Ooops!</p>
+            <p>${errorMsg}</p>
             <a href="/produtos">Voltar para index</a>
         </div>
     </div>
